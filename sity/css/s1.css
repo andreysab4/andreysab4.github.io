@@ -55,10 +55,10 @@ cursor:pointer;
 .prv_b:hover, .nxt_b:hover{opacity:.6;}
 .prv_b{
 left:10px;
-background: url(https://avatars.mds.yandex.net/get-images-cbir/2106421/XTotsiSTvUzdna7k14MMTw/preview) no-repeat;
+background: url(images/prv.png) no-repeat;
 }
 
 .nxt_b{
 right:10px;
-background: url(https://avatars.mds.yandex.net/get-images-cbir/2473371/y8mtItdLHI5mPeeKA6fgQQ/preview) no-repeat;
+background: url(images/nxt.png) no-repeat;
 }
