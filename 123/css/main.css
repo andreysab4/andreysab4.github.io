@@ -35,3 +35,7 @@ body {
   border: 1px solid gold;
   text-decoration: none;
 }
+
+.main button:hover {
+  cursor: pointer;
+}
