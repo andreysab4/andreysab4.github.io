@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  padding-top: 100px;
+  text-align: center;
+}
+.main h1 {
+  color: black;
+}
+.main a {
+  text-decoration: none;
+}
+.main button {
+  padding: 10px 50px;
+}
