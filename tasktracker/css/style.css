@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 73px;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.header-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.logo img {
+  display: block;
+}
+
+.nav {
+  margin-top: -4px;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 14px;
+  color: #18191f;
+}
+
+.nav-link {
+  margin-right: 32px;
+  color: #18191f;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: #8c30f5;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.appstore {
+  margin-left: auto;
+  display: flex;
+}
+
+.appstore-item {
+  margin-left: 12px;
+}
+
+.appstore-item:first-child {
+  margin-left: 0;
+}
+
+/* Main */
+.main {
+}
+
+.main-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 197px;
+  padding-bottom: 197px;
+}
+
+.main-content {
+  width: 540px;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.main-header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1.3;
+  color: #18191f;
+}
+
+.main-text {
+  margin-bottom: 32px;
+}
+
+.main-text p {
+  margin-bottom: 15px;
+  line-height: 1.78;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 62px;
+  background: #8c30f5;
+  border-radius: 8px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 62px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background-color: #0b0d17;
+  color: #d9dbe1;
+}
+
+.footer-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.footer-socials-item {
+  margin-left: 16px;
+}
+
+.footer-socials-item:first-child {
+  margin-left: 0;
+}
