@@ -18,7 +18,7 @@
 
 .header {
     width: 100%;
-    background-image: url("img/section-top__bg-img.png");
+    background-image: url("../img/section-top__bg-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
