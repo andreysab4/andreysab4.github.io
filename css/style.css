@@ -94,6 +94,7 @@ header {
 .card {
 	background-color: #fff;
 	max-width: 540px;
+	height: 380px;
 	margin-bottom: 30px;
 	box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
 	transition: transform 0.2s ease-in;
