@@ -1,0 +1,1312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.flex {
+    display: flex;
+}
+header {
+    background-image: url("../img/header_bg.png");
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1900px;
+    color: #FFFFFF;
+}
+.header_content {
+    margin-left: 170px;
+}
+.header-sw {
+    background: radial-gradient(95.31% 92.17% at 4.69% 92.17%, rgba(128, 181, 142, 0.55) 0%, rgba(128, 181, 142, 0) 100%);
+    width: 352px;
+    height: 364px;
+    margin-top: -345px;
+    z-index: 1;
+    margin-left: -200px;
+}
+.header__up {
+    padding-top: 42px;
+    display: flex;
+}
+.header__logo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.header__logo-untext {
+    font-style: normal;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.header__adress {
+    color: #FFFFFF;
+}
+.header__adress img {
+    margin-left: 66px;
+    margin-right: 30px;
+    vertical-align: bottom;
+}
+.header__adress-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    width: 150px;
+    height: 47px;
+}
+.header__menu {
+    margin-left: 101px;
+    margin-top: 9px;
+}
+.header__menu ul {
+    list-style-type: none;
+}
+.header__menu ul li {
+    display: inline-block;
+}
+.header__menu ul li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-right: 56px;
+}
+.header__switch-language-e {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.header__switch-language-eng{
+    padding-left: 5px;
+}
+.active {
+    background-color: #fff;
+    color: #3F714C;
+}
+.header__video {
+    margin-top: 156px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.header__video-text {
+    margin-top: 25px;
+    margin-left: 32px;
+}
+.header_dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем модальное окно */
+
+.header_dm-overlay:target {
+    display: block;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+/* блочная таблица */
+
+.header_dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+
+.header_dm-cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+/* модальный блок */
+
+.header_dm-modal {
+    display: inline-block;
+    padding: 20px;
+    max-width: 50em;
+    color: #cfd8dc;
+    text-align: left;
+    width: 1280px;
+}
+/* изображения в модальном окне */
+
+.header_dm-modal img {
+    width: 100%;
+    height: auto;
+}
+/* миниатюры изображений */
+
+.header_pl-left,
+.header_pl-right {
+    width: 25%;
+    height: auto;
+}
+/* миниатюра справа */
+
+.header_pl-right {
+    float: right;
+    margin: 5px 0 5px 15px;
+}
+/* миниатюра слева */
+
+.header_pl-left {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+/* встраиваемое видео в модальном окне */
+
+.header_video {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.header_video iframe,
+.header_video object,
+.header_video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* рисуем кнопарь закрытия */
+
+.close {
+    z-index: 9999;
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: #cfd8dc;
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+    cursor: pointer;
+}
+.close:after {
+    display: block;
+    border: 2px solid #cfd8dc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: '';
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+/* кнопка закрытия при наведении */
+
+.header_close:hover:after {
+    border-color: #fff;
+    color: #fff;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.header__title{
+    margin-top: 50px;
+    width: 511px;
+    height: 274px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 79px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.header__left-soc {
+    padding-top: 262px;
+    z-index: 100;
+}
+.header__left-soc img{
+    margin-right: 27px;
+    z-index: 100;
+}
+.header__left-soc img:hover{
+    opacity: 0.7;
+}
+.header__3d {
+    width: 671px;
+    height: 671px;
+    margin-left: 487px;
+    padding-top: 50px;
+    background-image: url("/img/bg-header-left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__3d-title {
+    margin-top: 250px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 74px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.header__3d-text1 {
+    margin-left: 120px;
+
+}
+.header__3d-text-list img {
+    margin-left: 21px;
+    cursor: pointer;
+}
+.header__3d-text {
+    margin-top: 20px;
+}
+.header__3d-text1 {
+    margin-right: 39px;
+}
+.header__right-plus {
+    margin-top: 130px;
+}
+.header__right-plus-item img {
+    width: 76px;
+    height: 76px;
+}
+.header__right-plus-item-text {
+    margin-top: 30px;
+    margin-left: 32px;
+    margin-right: 100px;
+}
+.main__sliders {
+    height: 800px;
+}
+.main__slider-item img{
+    width: 742px;
+    height: 700px;
+}
+.main__slider-item {
+    margin-top: 170px;
+    display: flex;
+    margin-left: 170px;
+}
+.main__slider_item-text {
+    margin-left: 121px;
+    margin-top: 130px;
+}
+.main__slider_item_text-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #3F714C;
+    width: 687px;
+    height: 76px;
+}
+.main__slider_item_text-text {
+    margin-top: 61px;
+    width: 455px;
+    height: 164px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333A52;
+}
+
+.main__location {
+    background-color: #3F714C;
+    color: #FFFFFF;
+    height: 1620px;
+}
+.main__location-map {
+    width: 100%;
+    margin-top: 50px;
+}
+.main__location-slider {
+    padding-left: 110px;
+}
+.main__location-slider-title {
+    padding-top: 102px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 79px;
+    text-transform: uppercase;
+    width: 650px;
+    margin-bottom: 110px;
+}
+.main__location-slider-plus {
+    width: 372px;
+    text-align: center;
+    margin-right: 264px;
+    height: 370px;
+}
+.main__location-slider-plus img {
+    margin-bottom: 49px;
+}
+.main__location-slider-plus-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.main__location-slider-plus-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    width: 372px;
+
+}
+.main__slider-item-previous {
+    background-image: url("../img/knopka-main1.png")!important;
+    margin-right: 50px;
+}
+.main__slider-item-dots {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgba(52, 52, 72, 0.2);
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: 14px;
+}
+.active-dots {
+    color: #3F714C;
+    font-weight: bold;
+}
+.main_slider-item-change {
+    margin-top: 100px;
+}
+.main__slider-item-next {
+    background-image: url("../img/knopka-main2.png")!important;
+}
+.previous {
+    background-image: url("/img/knopka-main2.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 59px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.main__location-slider-plus-change {
+    display: flex;
+    margin-top: 100px;
+}
+.next {
+    cursor: pointer;
+    background-image: url("/img/knopka-main.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 59px;
+}
+.main__gallery {
+    height: 900px;
+    padding-left: 170px;
+}
+.main__gallery-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 79px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 150px;
+    color: #3F714C;
+    margin-bottom: 50px;
+}
+.main__gallery-right-up img{
+    margin-left: 35px;
+}
+.main__gallery-right-bottom {
+    margin-left: 35px;
+    margin-top: 27px;
+}
+
+/* Booking */
+.main__booking {
+    position: relative;
+}
+.main__booking svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main__booking img {
+    width: 100%;
+}
+.main__booking svg a:hover {
+    fill: aquamarine;
+}
+.part {
+    position: relative;
+    opacity: 0.1;
+    transition: opacity 0.4s ease;
+}
+.part:hover {
+    opacity: 0.3;
+}
+.description_content--red {
+    width: 203px !important;
+    height: 47px !important;
+    background: #FF002E !important;
+    border-radius: 10px !important;
+    text-align: center;
+    padding-top: 15px;
+}
+.description_content--yellow {
+    width: 203px !important;
+    height: 47px !important;
+    background: #d3b50b !important;
+    border-radius: 10px !important;
+    text-align: center;
+    padding-top: 15px;
+}
+.description {
+	display: block;
+    position: absolute;
+	width: 468px;
+	height: 290px;
+    color: white;
+    z-index: 99999;
+}
+.description img {
+    height: 290px;
+}
+.description-flex {
+    display: flex;
+}
+.description_content {
+    background: #343448;
+    width: 215px;
+    border-radius: 0 10px 0 0;
+    padding-left: 59px;
+}
+.description_btn {
+    margin-top: 13px;
+    width: 215px;
+    background: #3F714C;
+    height: 47px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: -59px;
+    outline: none;
+    border: 1px solid #3F714C;
+    cursor: pointer;
+}
+.description_btn a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+}
+.active-pos-1 {
+    margin-left: 450px;
+    margin-top: 300px;
+}
+.active-pos-2 {
+    margin-top: 100px;
+    margin-left: 600px;
+}
+.description_house-num {
+    margin-top: 20px;
+}
+.description_house-num, .description_square-text1, .description_price-text1 {
+    font-style: normal;
+
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 25px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.description_house-text, .description_square-text2, .description_price-text2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -200px;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto; /* для отображения модального окна по центру */
+    }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    width: 722px;
+}
+@media (min-width: 768px) {
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}  
+
+.modal-body-title {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #3F714C;
+}
+.modal-body-untitle {
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.modal-body form {
+    text-align: center;
+}
+.modal-body form input {
+    padding: 12px 10px; /* отступы текста */
+    width: 260px; /* ширина */
+    border-radius: 5px 5px 0 0; /* закругленные углы сверху */
+    border: 1.61264px solid #333A52;
+    outline: none;
+    margin-bottom: 30px;
+}
+.modal-body form input[type="submit"] {
+    color: #fff; /* цвет текста */
+    font-weight: bold; /* жирный текст */
+    margin: 10px; /* отступы */
+    padding: 12px 20px; /* оступы для текста */
+    background: #3F714C;
+    border-radius: 51.7021px;   
+}
+/* //Booking */
+.main__general_plan {
+    padding-top: 200px;
+    padding-left: 221px;
+    color: #3F714C;
+}
+.main__general_plan img {
+    margin-left: -45px;
+    margin-top: 10px;
+    z-index: -1;
+}
+.main__general_plan-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 79px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 110px;
+}
+.main__general_plan-untitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+.main__general_plan-plus {
+    margin-bottom: 30px;
+}
+.main__general_plan-plus-num {
+    background: #FFFFFF;
+    border: 1.27027px solid rgba(48, 53, 59, 0.14);
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-right: 25px;
+}
+.main__general_plan-plus-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 139% */
+
+    display: flex;
+    align-items: center;
+
+    color: #30353B;
+}
+.main__general_plan-plus-list {
+    margin-top: 46px;
+}
+.main__general_plan-step-construction-item {
+    margin-right: 130px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #30353B;
+    
+}
+.main__general_plan-step-construction-item p {
+    vertical-align: bottom;
+}
+.main__general_plan-step-construction {
+    margin-left: 100px;
+}
+.main__general_plan-step-construction-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    color: #3F714C;
+}
+.main__materials {
+    background-image: url("/img/materials.jpg");
+    background-repeat: no-repeat;
+    height: 1001px;
+    margin-top: 200px;
+    position: relative;
+}
+.main__materials img {
+    position: absolute;
+    transition: opacity 0.1s ease-in;
+}
+.main__materials img:hover {
+    opacity: 0.8;
+}
+.main__materials-1 {
+    margin-top: 42px;
+    margin-left: 621px;
+}
+.main__materials-2 {
+    margin-top: 391px;
+    margin-left: 272px;
+}
+.main__materials-3 {
+    margin-top: 483px;
+    margin-left: 693px;
+}
+.main__materials-4 {
+    margin-top: 483px;
+    margin-left: 899px;
+}
+.main__materials-5 {
+    margin-top: 587px;
+    margin-left: 844px;
+}
+.main__materials-6 {
+    margin-top: 523px;
+    margin-left: 1428px;
+}
+.main__materials-7 {
+    margin-top: 286px;
+    margin-left: 1237px;
+}
+.main__materials-item {
+    width: 461px;
+    height: 271px;
+    background: #343448;
+    border-radius: 10px;
+    position: absolute;
+    left: 1324px;
+    top: 70px;
+    padding-top: 40px;
+    padding-left: 43px;
+    color: #FFFFFF;
+}
+.main__materials-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.main__materials-item-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+.main__materials-item-untext {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.main__materials-item-number-cameras {
+    margin-top: 15px;
+}
+.main__materials-item-right {
+    margin-left: 50px;
+}
+.main__materials-item-unsecured {
+    margin-top: 15px;
+}
+.main__materials-item-economy-vitrat-energy {
+    margin-top: 15px;
+}
+.content {
+    margin-top: 150px;
+    margin-left: 220px;
+}
+.main__cottages {
+    height: 1000px;
+}
+.main__cottages-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 49px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #3F714C;
+    margin-bottom: 80px;
+}
+.main__cottages_slider-item {
+    position: relative;
+}
+.main__cottages_slider-item img {
+    margin-bottom: 53px;
+}
+.main__cottages_slider_item-plan-dow {
+    position: absolute;
+    left: 49px;
+    top:480px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    width: 260px;
+    height: 47px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 45px;
+    padding-top: 7px;
+}
+.main__cottages_slider_item-plan-dow a{
+    text-decoration: none;
+    color: #3F714C;
+    
+}
+.main__cottages_slider_item-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #30353B;
+}
+.main__cottages_slider_item-cottages {
+    margin-right: 102px;
+}
+.main__cottages_slider_item-square {
+    margin-right: 130px;
+}
+.main__cottages_slider_item-box {
+    margin-right: 61px;
+}
+.main__cottages_slider_items-top {
+    padding-left: 25px;
+}
+.main__cottages_slider_items-bottom {
+    padding-left: 25px;
+    margin-top: -18px;
+}
+.main__cottages_slider_items-bottom-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #30353B;
+    margin-right: 330px;
+}
+.main__cottages_slider_item-box-text {
+    padding-top: 25px;
+}
+.main__cottages_slider_item-box img {
+    margin-right: 17px;
+}
+.main__cottages_slider_item-untitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: rgba(48, 53, 59, 0.5);
+}
+.main__cottages_slider_items-bottom-item-text {
+    background: #FFFFFF;
+    border: 1.27027px solid rgba(48, 53, 59, 0.14);
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.main__cottages_slider_items-bottom-item-untext {
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-right: 61px;
+}
+.slider-dots {
+    text-align: center;
+    /* display: none; */
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+.main__cottages_slider-item-previous, .main__cottages_slider-item-next {
+    margin-top: -530px;
+    z-index: 9999;
+    height: 102px;
+    width: 134px;
+}
+.main__cottages_slider-item-previous {
+    background-image: url("../img/cottage (2).png")!important;
+    padding-right: 1460px;
+    margin-left: -45px;
+}
+.main__cottages_slider-item-next {
+    background-image: url("../img/cottage2-btn.png")!important;
+    margin-right: 50px;
+    
+}
+.main__duplex_slider-item {
+    position: relative;
+}
+.main__duplex_slider-item img {
+    margin-bottom: 53px;
+}
+.main__duplex_slider_item-plan-dow {
+    position: absolute;
+    left: 49px;
+    top:480px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    width: 260px;
+    height: 47px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 45px;
+    padding-top: 7px;
+}
+.main__duplex_slider_item-plan-dow a{
+    text-decoration: none;
+    color: #3F714C;
+}
+.main__duplex_slider_item-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #30353B;
+}
+.main__duplex_slider_item-cottages {
+    margin-right: 102px;
+}
+.main__duplex_slider_item-square {
+    margin-right: 130px;
+}
+.main__duplex_slider_item-box {
+    margin-right: 61px;
+}
+.main__duplex_slider_items-top {
+    padding-left: 25px;
+}
+.main__duplex_slider_items-bottom {
+    padding-left: 25px;
+    margin-top: -18px;
+}
+.main__duplex_slider_items-bottom-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #30353B;
+    margin-right: 330px;
+}
+.main__duplex_slider_item-box-text {
+    padding-top: 25px;
+}
+.main__duplex_slider_item-box img {
+    margin-right: 17px;
+}
+.main__duplex_slider_item-untitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: rgba(48, 53, 59, 0.5);
+}
+.main__duplex_slider_items-bottom-item-text {
+    background: #FFFFFF;
+    border: 1.27027px solid rgba(48, 53, 59, 0.14);
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.main__duplex_slider_items-bottom-item-untext {
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-right: 61px;
+}
+.main__duplex-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 49px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #3F714C;
+    margin-bottom: 80px;
+}
+.main__construction_progress {
+    height: 1150px;
+    width: 100%;
+    background: #3F714C;
+    margin-top: 200px;
+}
+.main__construction_progress-title {
+    padding-top: 150px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 79px;  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.main__construction_progress-block {
+    margin-top: 60px;
+}
+.main__construction_progress_year-text, .main__construction_progress_month-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+select {
+    width: 179px;
+    height: 47px;
+    border: 2px solid #FFFFFF;
+    border-radius: 44px;
+    outline: none;
+    margin-left: 20px;
+    background:none;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    overflow:hidden;
+    cursor: pointer;
+}
+select option {
+    background:rgb(182, 182, 182);
+}
+.main__construction_progress_month-text {
+    margin-left: 56px;
+}
+.main__construction_progress-item {
+    margin-right: 40px;
+    margin-top: 110px;
+}
+.main__questions_answers {
+    height: 1500px;
+}
+.main__questions_answers-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 79px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #3F714C;
+}
+.main__questions_answers-hide-block {
+    display: none;
+}
+.main__questions_answers li{
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #30353B;
+    border-bottom: 2px solid #3F714C;
+    width: 1580px;
+    padding-bottom: 24px;
+    padding-top: 79px;
+}
+.main__questions_answers li img {
+    float: right;
+    padding-right: 30px;
+}
+.main__questions_answers-hide-block-text {
+    padding: 20px 20px 0 20px;
+    font-size: 18px;
+    width: 1500px;
+}
+.main__get_consultation {
+    height: 500px;
+    margin-top: 200px;
+    text-align: center;
+    width: 916px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main__get_consultation-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #3F714C;
+ 
+}
+.main__get_consultation form{
+    margin-top: 100px;
+}
+.main__get_consultation form input[type="text"] {
+    width: 482px;
+    border: 1px solid #fff;
+    border-bottom: 2px solid #3F714C;
+    padding-bottom: 15px;
+    padding-top: 35px;
+    outline: none;
+}
+.main__get_consultation form input[type="submit"] {
+    margin-top: 50px;
+    width: 276px;
+    height: 47px;
+    background: #3F714C;
+    border-radius: 45px;
+    border: 1px solid #fff;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    transition: opacity 0.1s ease-in;
+}   
+.main__get_consultation form input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    height: 1192px;
+    max-width: 100%;
+    background: #3F714C;
+}
+.footer__contact {
+    margin-top: 200px;
+}
+.footer__contact-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 79px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 150px;
+}
+.footer__contact-contacts {
+    margin-top: 180px;
+    color: white;
+    margin-left: 170px;
+}
+.footer__contact-contacts a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-right: 282px;
+    width: 150px;
+    margin-top: 15px;
+}
+.footer__bottom {
+    margin-top: 100px;
+    margin-left: 170px;
+    background-color: #fff;
+    width: 1580px;
+    height: 432px;
+}
+.footer__bottom-logo img{
+    margin-top: 111px;
+    margin-left: 711px;
+}
+.footer__bottom-menu {
+    margin-top: 79px;
+}
+.footer__bottom-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.footer__bottom-menu ul li a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    margin-right: 118px;
+}
+.footer__bottom-menu ul li:nth-child(1) a {
+    margin-left: 290px;
+}
+
+.header__middle {
+    display: flex;
+}

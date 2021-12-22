@@ -1,0 +1,10 @@
+@media(max-width: 336px) {
+    header, main, footer {
+        display: none;
+    }
+    /* .mobile-header {
+        background-image: url("/img/header_bg_mob.jpg");
+        width: 336px;
+        height: 640px;
+    } */
+}
