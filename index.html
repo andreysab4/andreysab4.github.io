@@ -1,1500 +1,191 @@
-
 <!DOCTYPE html>
-<html lang="ua">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Vita Residence</title>
-    <link rel="alternate" hreflang="en" href="localhost/" />
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-</head>
-<body>
-    <header>
-        <div class="header_content">
-            <div class="header__up">
-                <div class="header__logo">
-                    <img src="img/logo_header.png" alt="">
-                </div>
-                <div class="header__adress flex">
-                    <img src="img/map.svg" alt="Картинка">
-                    <div class="header__adress-name">Віта-Поштова (с. Круглик)</div>
-                </div>
-                <div class="header__menu">
-                    <ul>
-                        <li><a href="#gallery">Концепція</a></li>
-                        <li><a href="#genplan">Генплан</a></li>
-                        <li><a href="#cottage">Будинки</a></li>
-                        <li><a href="#duplex">Дуплекси</a></li>
-                        <li><a href="#contact">Контакти</a></li>
-                    </ul>
-                </div>
-                <div class="header__switch-language flex">
-                    <div class="header__switch-language-e active">UA</div>
-                    <div class="header__switch-language-e">RU</div>
-                    <div class="header__switch-language-e header__switch-language-eng">ENG</div>
-                </div>
-            </div>
-            <div class="header__middle">
-                <div class="header__left">
-                    <div class="header__video flex">
-                        <a href="#header_video3"><img src="img/video.png" alt=""></a>
-                        <div class="header__video-text">Дивитися відео</div>
-                    </div>
-                    <div class="header__title">Найкраще котеджне містечко 2022 року</div>
-                    <div class="header__left-soc">
-                        <a href="#"><img src="img/facebook.png" alt="Фейсбук"></a>
-                        <a href="#"><img src="img/instagram.png" alt="Инстаграм"></a>
-                        <a href="#"><img src="img/telegram.png" alt="Телеграм"></a>
-                    </div>
-                    <div class="header-sw"></div>
-                </div>
-                <div class="header__right">
-                    <div class="header__3d">
-                        <div class="header__3d-title">Віртуальний 3D-тур</div>
-                        <div class="header__3d-text-list flex">
-                            <div class="header__3d-text1 flex">
-                                <div class="header__3d-text">Коттедж 240 м²</div>
-                                <a href="#header_video"><img src="img/knopka-header.png" alt=""></a>
-                            </div>
-                            <div class="header__3d-text2 flex">
-                                <div class="header__3d-text">Дуплекс 220 м²</div>
-                                <a href="#header_video2"><img src="img/knopka-header.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header__right-plus flex">
-                        <div class="header__right-plus-item flex">
-                            <img src="img/metro.png" alt="">
-                            <div class="header__right-plus-item-text">10 хв до метро Теремки</div> 
-                        </div>
-                        <div class="header__right-plus-item flex">
-                            <img src="img/gektar.png" alt="">
-                            <div class="header__right-plus-item-text">1.5 гектару</div> 
-                        </div>
-                        <div class="header__right-plus-item flex">
-                            <img src="img/home.png" alt="">
-                            <div class="header__right-plus-item-text">16 котеджів</div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header_dm-overlay" id="header_video">
-                <div class="header_dm-table">
-                    <div class="header_dm-cell">
-                        <div class="header_dm-modal teal">
-                            <a href="#close" class="close"></a>
-                            <div class="header_video">
-                                <iframe width="1280" height="720" src="youtube.com" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header_dm-overlay" id="header_video2">
-                <div class="header_dm-table">
-                    <div class="header_dm-cell">
-                        <div class="header_dm-modal teal">
-                            <a href="#close" class="close"></a>
-                            <div class="header_video">
-                                <iframe width="1280" height="720" src="youtube.com" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header_dm-overlay" id="header_video3">
-                <div class="header_dm-table">
-                    <div class="header_dm-cell">
-                        <div class="header_dm-modal teal">
-                            <a href="#close" class="close"></a>
-                            <div class="header_video">
-                                <iframe width="1280" height="720" src="youtube.com" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Сайт портфолио</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="text">
+        <h1 class="header-title">Андрей Гонов</h1>
+        <p class="header-text">ФРИЛАНСЕР, ВЕБ-РАЗРАБОТКА, СОЗДАНИЕ САЙТОВ</p>
+        <a class="header-arrow" href="#portfolio">
+          <img src="../img/chevron-down.svg" alt="Arrow" />
+        </a>
+      </div>
     </header>
-    <main>
-        <div class="main__sliders">
-            <div class="main__slider-list">
-                <div class="main__slider-item flex">
-                    <img src="img/Визуализации/Дом_8 - Photo.jpg" alt="">
-                    <div class="main__slider_item-text">
-                        <div class="main__slider_item_text-title">Втомило місто? Випробуйте почуття свободи, затишку та комфорту в новому котеджному містечку «Vita Residence»!                        </div>
-                        <div class="main__slider_item_text-text">Містечко розташоване в 15 хвилинах від Києва: 16 нових двоповерхових котеджів бізнес-класу. Сучасні інтер'єри та архітектура, унікальний ландшафтний дизайн. Матеріали – виключно преміум-класу: красиві та довговічні. Ви дійсно отримаєте задоволення від проживання у наших будинках незалежно від пори року.</div>
-                        <div class="main_slider-item-change flex">
-                            <div class="main__slider-item-previous previous" onclick="previousSlide()"></div>
-                            <span class="main__slider-item-dots active-dots" onclick="currentSlide(1)">1</span> 
-                            <span class="main__slider-item-dots" onclick="currentSlide(2)">2</span> 
-                            <span class="main__slider-item-dots" onclick="currentSlide(3)">3</span> 
-                            <div class="main__slider-item-next next" onclick="nextSlide()"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main__slider-item flex">
-                    <img src="img/Визуализации/Дом_8 - Photo.jpg" alt="">
-                    <div class="main__slider_item-text">
-                        <div class="main__slider_item_text-title">Можливість жити поблизу від природи</div>
-                        <div class="main__slider_item_text-text">
-                            У шести хвилинах ходьби є тінистий ліс для прогулянок, а трохи далі багаті рибою ставок та озеро. Чисте повітря, гарні краєвиди, відсутність суєти та сторонніх звуків – ось що додасть натхнення, і дозволить легко зосередитись на досягненні своїх цілей! Така атмосфера підвищує продуктивність у рази.</div>
-                        <div class="main_slider-item-change flex">
-                            <div class="main__slider-item-previous previous" onclick="previousSlide()"></div>
-                            <span class="main__slider-item-dots" onclick="currentSlide(1)">1</span> 
-                            <span class="main__slider-item-dots active-dots" onclick="currentSlide(2)">2</span> 
-                            <span class="main__slider-item-dots" onclick="currentSlide(3)">3</span> 
-                            <div class="main__slider-item-next next" onclick="nextSlide()"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main__slider-item flex">
-                    <img src="img/Визуализации/Дом_8 - Photo.jpg" alt="">
-                    <div class="main__slider_item-text">
-                        <div class="main__slider_item_text-title">Безпечно та зручно</div>
-                        <div class="main__slider_item_text-text">
-                            Містечко площею 1,5 гектари обслуговується та охороняється 24/7. Знаходячись лише в 10 км від Києва, звідси легко дістатися міської інфраструктури: розважальних закладів, торгових/спортивних центрів, медичних та навчальних закладів; за допомогою власного чи міського транспорту.</div>
-                        
-                        <div class="main_slider-item-change flex">
-                            <div class="main__slider-item-previous previous" onclick="previousSlide()"></div>
-                            <span class="main__slider-item-dots" onclick="currentSlide(1)">1</span> 
-                            <span class="main__slider-item-dots" onclick="currentSlide(2)">2</span> 
-                            <span class="main__slider-item-dots active-dots" onclick="currentSlide(3)">3</span> 
-                            <div class="main__slider-item-next next" onclick="nextSlide()"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__location">
-            <div class="main__location-slider item">
-                <div class="main__location-slider-title">Зручне розташування</div>
-                <div class="main__location-slider-plus-list">
-                    <div class="main__location-slider-item flex">
-                        <div class="main__location-slider-plus">
-                            <img src="img/plus.svg" alt="">
-                            <div class="main__location-slider-plus-title">Озеро та ставок</div>
-                            <div class="main__location-slider-plus-text">Два чисті водоймища створюють прекрасний панорамний вигляд, яким можна буде милуватися в будь-яку пору року. Це місце чудово підходить для сімейного відпочинку, пляжних розваг, риболовлі. Працює прокат човнів, катамаранів.</div>
-                        </div>
-                        <div class="main__location-slider-plus">
-                            <img src="img/plus2.svg" alt="">
-                            <div class="main__location-slider-plus-title">Ліс</div>
-                            <div class="main__location-slider-plus-text">Змішаний ліс навпроти котеджного містечка – це природний еко-фільтр: постійно очищає повітря та захищає місцевість від поривів вітру. Плюс, це чудова можливість робити приємні прогулянки з сім'єю, займатися спортом чи просто відпочивати під співи птахів.</div>
-                        </div>
-                        <div class="main__location-slider-plus">
-                            <img src="img/plus3.svg" alt="">
-                            <div class="main__location-slider-plus-title">Пейнтбольний клуб</div>
-                            <div class="main__location-slider-plus-text">Пейнтбольний клуб «Бомба» пропонує цілий парк професійного обладнання на будь-який смак, чотири великі майданчики для активного відпочинку. Це чудова можливість потренуватися, зарядиться позитивом, отримати незабутні емоції та розширити
-                                коло знайомств.</div>
-                        </div>
-                    </div>
-                    <div class="main__location-slider-item flex">
-                        <div class="main__location-slider-plus">
-                            <img src="img/plus4.svg" alt="">
-                            <div class="main__location-slider-plus-title">Кінноспортивний клуб</div>
-                            <div class="main__location-slider-plus-text">«Flying Horse Club» – це три стійла з навченими кіньми та команда професійних тренерів, які допоможуть опанувати цей елітний вид спорту. Є два літніх манежу, а також один критий, для занять у негоду. Тут регулярно проводять змагання, спостерігати за якими можна із глядацьких трибун.</div>
-                        </div>
-                        <div class="main__location-slider-plus">
-                            <img src="img/plus5.svg" alt="">
-                            <div class="main__location-slider-plus-title">Поруч Київ</div>
-                            <div class="main__location-slider-plus-text">Проживаючи в містечку Vita Residence, ви не будете відрізані від столиці та супутньої інфраструктури: на власному авто ви дістанетеся до Києва лише за чверть години. Також сюди можна доїхати за допомогою міського транспорту, який здійснює рейси регулярно та без вихідних.</div>
-                        </div>
-                        <div class="main__location-slider-plus">
-                            <img src="img/plus6.svg" alt="">
-                            <div class="main__location-slider-plus-title">Кінотеатр</div>
-                            <div class="main__location-slider-plus-text">З «Vita Residence» не треба їхати до центру Києва, щоби потрапити на прем'єру кіно. Буде достатньо 15 хвилин, щоб дістатися кінотеатру «Баттерфляй» у ТРК «МегаМаркет». Тут регулярно відбувається прокат новинок кінематографа; є супермаркет, поштові відділення, магазини, кафе та інші різноманітні розваги.</div>
-                        </div>
-                    </div>
-                    <div class="main__location-slider-plus-change">
-                        <div class="previous" style="padding-left: 1500px;" onclick="previousSlidePlus()"></div>
-                        <div class="next" onclick="nextSlidePlus()"></div>
-                    </div>
-                </div>
-            </div>
-            <iframe class="main__location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24241.039608160743!2d30.399046438662456!3d50.31011782002522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4b7b4dbf208ed%3A0x938fe1c051b0710a!2z0JLQuNGC0LAt0J_QvtGH0YLQvtCy0LDRjywg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDA4MTcw!5e0!3m2!1sru!2sru!4v1640162495494!5m2!1sru!2sru" width="600" height="679" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            
-        </div>
-        <div class="main__gallery" id="gallery">
-            <div class="main__gallery-title">Галерея містечка</div>
-            <div class="main__gallery-item flex">
-                <div class="main__gallery-left">
-                    <img src="img/gallery.jpg" alt="">
-                </div>
-                <div class="main__gallery-right">
-                    <div class="main__gallery-right-up">
-                        <img src="img/gallery3.jpg" alt="">
-                        <img src="img/gallery2.jpg" alt="">
-                    </div>
-                    <div class="main__gallery-right-bottom">
-                        <img src="img/gallery4.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="main__gallery-item flex">
-                <div class="main__gallery-left">
-                    <img src="img/gallery5.jpg" alt="">
-                </div>
-                <div class="main__gallery-right">
-                    <div class="main__gallery-right-up">
-                        <img src="img/gallery6.jpg" alt="">
-                        <img src="img/gallery7.jpg" alt="">
-                    </div>
-                    <div class="main__gallery-right-bottom">
-                        <img src="img/gallery8.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="main_slider-item-change flex" style="margin-top: 25px;">
-                <div class="main__slider-item-previous previous" onclick="previousSlideGallery()" style="margin-right: 100px;margin-left: 650px;"></div>
-                <div class="main__slider-item-next next" onclick="nextSlideGallery()"></div>
-            </div>
-        </div>
-        <div class="main__booking" id="main__booking">
-            <svg viewBox="0 0 1560.7113 844.57239">
-        <path fill="green" class="part main__booking-pos-1" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№1</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>"  d="m 1180.2225,188.83559 99.0868,-54.99058 68.4788,44.615 22.8263,84.04222 0.6045,1.25014 9.9044,0.36683 13.5728,44.75353 -3.6683,3.30149 1.8342,6.60298 -12.1055,16.14062 11.005,1.46733 17.2411,66.0298 -8.804,7.70348 -189.3681,-15.32753 z"></path>
-        <path fill="green" class="part main__booking-pos-1" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№2</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="m 1010.0629,157.70885 168.0845,17.11971 32.683,219.96234 -198.6924,-16.60093 z"></path>
-        <path fill="green" class="part main__booking-pos-1" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№3</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="m 845.60995,142.14548 163.93415,15.56337 2.0752,220.61081 -190.91075,-16.21184 z"></path>
-        <path fill="green" class="part main__booking-pos-1" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№4</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="M 684.78842,126.06332 845.09117,141.6267 820.70855,362.10782 634.98563,346.54444 Z"></path>
-        <path fill="red" class="part main__booking-pos-1" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--red'>
-                Продано
-                </div>
-            </div>
-        </div>" d="m 528.11713,111.01873 155.63373,15.04459 -49.28401,220.9999 -182.61024,-15.56337 z"></path>
-        <path fill="green" class="part main__booking-pos-1" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№6</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="M 377.15241,97.011693 527.59835,109.98117 450.81905,331.49985 270.80269,315.93648 Z"></path>
-        <path fill="yellow" class="part main__booking-pos-1" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--yellow'>
-                Забронированно
-                </div>
-            </div>
-        </div>" d="M 228.26281,81.967099 376.11485,96.492914 269.24636,316.45526 107.38728,302.44822 l -9.338029,-9.8568 z"></path>
-        <path fill="green" class="part main__booking-pos-1" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№8</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="M 48.765236,64.847388 0.51877911,100.64315 V 256.79566 L 74.185412,323.71816 99.605589,308.67357 97.530472,295.18531 97.011693,294.66653 227.74403,80.929541 Z"></path>
-        <path fill="yellow" class="part main__booking-pos-2" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--yellow'>
-                Забронированно
-                </div>
-            </div>
-        </div>" d="m 250.57031,340.83787 -136.95769,59.14082 41.50233,92.86146 173.791,-83.52343 23.86384,35.79575 59.6596,-25.42017 -32.68308,-54.99059 -33.72064,15.0446 L 302.967,337.7252 Z"></path>
-        <path fill="green" class="part main__booking-pos-2" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№9/1</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="m 154.0774,492.32137 79.89198,167.56565 C 314.92009,617.13187 397.06885,571.98063 476.758,531.74859 l -64.84739,-111.53751 -58.10326,24.9014 -25.42017,-35.79576 z"></path>
-        <path fill="green" class="part main__booking-pos-2" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№10</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="m 233.96938,659.88703 85.07977,184.16658 195.06095,-0.51878 214.77455,-47.72768 -185.72292,-293.62897 -89.23001,49.28401 6.22535,10.89436 -16.08216,7.26291 -9.33802,-17.11971 z"></path>
-        <path fill="red" class="part main__booking-pos-2" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--red'>
-                Продано
-                </div>
-            </div>
-        </div>" d="m 728.36587,795.28837 114.1314,-21.78872 24.9014,-361.07026 -51.87791,-6.22535 -15.0446,8.30047 -5.70657,0.51878 -59.65959,-5.18779 -7.78169,-8.30047 -71.59152,38.90843 3.11268,4.15024 -4.15024,1.55633 -6.22534,-9.8568 -4.15024,2.5939 4.66901,8.30046 -105.31215,54.99059 z"></path>
-        <path fill="green" class="part main__booking-pos-2" description-data="<div class='description' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <img class='description-img' src='img/booking-png.png' alt='123'>
-                <div class='description_content'>
-                    <div class='description_house'>
-                        <div class='description_house-num'>№12</div>
-                        <div class='description_house-text'>Дуплекс</div>
-                    </div>
-                    <div class='description_square'>
-                        <div class='description_square-text1'>509.87</div>
-                        <div class='description_square-text2'>Площа, м²</div>
-                    </div>
-                    <div class='description_price'>
-                        <div class='description_price-text1'>50 000 $</div>
-                        <div class='description_price-text2'>За дуплекс</div>
-                    </div>
-                    <button class='description_btn'><a href='#booking'>Забронювати</a></button>
-                </div>
-            </div>
-        </div>" d="m 842.24679,774.01599 158.47151,-33.0149 -0.73365,-154.80319 3.66835,-19.07528 v -6.60298 -18.34161 h 5.8693 l -5.1357,-118.11998 -136.46156,-11.73863 z"></path>
-        <path fill="yellow" class="part main__booking-pos-2" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--yellow'>
-                Забронированно
-                </div>
-            </div>
-        </div>" d="m 1000.2061,739.77901 155.115,-32.16431 -35.277,-274.43414 -116.7253,-9.33803 6.7441,117.24408 -6.2253,0.51878 -0.5188,25.42018 -3.1127,17.11971 z" ></path>
-        <path fill="yellow" class="part main__booking-pos-2" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--yellow'>
-                Забронированно
-                </div>
-            </div>
-        </div>" d="m 1155.8398,707.6147 140.5892,-29.05163 -11.4131,-70.55395 11.9319,-12.4507 16.6009,2.07511 -32.6831,-149.40838 -161.3403,-15.04459 z"></path>
-        <path fill="red" class="part main__booking-pos-2" description-data="<div class='description-s' style='display: flex;'>
-            <div class='description-flex' style='display: flex;'>
-                <div class='description_content--red'>
-                Продано
-                </div>
-            </div>
-        </div>" d="m 1296.9478,677.52552 119.8379,-22.30751 32.1643,-114.65018 -25.4201,-81.44832 -143.1831,-10.89436 33.7207,148.8896 -16.601,-1.55633 -11.9319,11.93192 z" ></path>
-            </svg>
-            <div class="description"></div>
-            <img src="img/booking.png" alt="">
+    <!-- // Header -->
 
-            <div id="booking" class="modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <a href="#close" title="Close" class="close">×</a>
-                        </div>
-                        
-                        <div class="modal-body"> 
-                            <div class="modal-body-title">Забронюйте Котедж</div>
-                            <div class="modal-body-untitle">Будь ласка, залиште контакти, щоб забронювати дуплекс.</div>
-                            <form action="" method="post">
-                                <input type="phone" placeholder="+380" name="phone"><br>
-                                <input type="text" placeholder="Введите номер дома" name="num_house"><br>
-                                <input type="submit" href="#bookingq" name="btn-booking">
-                            </form>
-                        </div>
+    <!-- Main -->
+    <main class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-header">Портфолио</h2>
 
-                    </div>
-                </div>
-            </div>
-            <div id="bookingq" class="modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <a href="#close" title="Close" class="close">×</a>
-                        </div>
-                        
-                        <div class="modal-body"> 
-                            <div class="modal-body-title">Заявку надіслано!</div>
-                            <div class="modal-body-untitle" style="margin-bottom: 80px;">Найближчим часом із вами зв'яжеться наш менеджер</div>
-                        </div>
+        <!-- portfolio-cars-wrapper -->
+        <div class="portfolio-cars-wrapper">
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="forest-travel.html" class="card-link">
+              <img
+                class="card-img"
+                src="./img/forest.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Многостраничный сайт</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </a>
+          </div>
+          <!-- //Card -->
 
-                    </div>
-                </div>
-            </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <a href="beauty.html" class="card-link">
+              <img
+                class="card-img"
+                src="./img/beauty.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Многостраничный сайт</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </a>
+          </div>
+          <!-- //Card -->
+
+          <!-- Card 3 -->
+          <div class="card">
+            <a href="#portfolio" class="card-link">
+              <img
+                class="card-img"
+                src="./img/portfolio.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Личный сайт</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </a>
+          </div>
+          <!-- //Card -->
+
+          <!-- Card 4 -->
+          <div class="card">
+            <a href="tasktracker.html" class="card-link">
+              <img
+                class="card-img"
+                src="./img/tasktracker.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Многостраничный сайт</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </a>
+          </div>
+          <!-- //Card 4 -->
+
+          <!-- Card 5 -->
+          <div class="card">
+            <a href="/family/" class="card-link">
+              <img
+                class="card-img"
+                src="./img/family.jpg"
+                alt="Верстка сайта"
+              />
+              <h3 class="card-title">Верстка сайта</h3>
+              <p>Верстка сайта</p>
+            </a>
+          </div>
+          <!-- //Card 5 -->
+
+          <!-- Card 6 -->
+          <div class="card">
+            <a href="/pizza/" class="card-link">
+              <img
+                class="card-img"
+                src="./img/pizza.png"
+                alt="Верстка сайта"
+              />
+              <h3 class="card-title">Вёрстка сайта пиццерии</h3>
+              <p>Вёрстка сайта пиццерии</p>
+            </a>
+          </div>
+          <!-- //Card 6 -->
+
+          <!-- Card 7 -->
+          <div class="card">
+            <a href="/trim/" class="card-link">
+              <img
+                class="card-img"
+                src="./img/trim.png"
+                alt="Верстка сайта"
+              />
+              <h3 class="card-title">Вёрстка сайта</h3>
+              <p>Вёрстка сайта</p>
+            </a>
+          </div>
+          <!-- //Card 7 -->
         </div>
-        <div class="main__general_plan flex" id="genplan">
-            <div class="main__general_plan-left">
-                <div class="main__general_plan-title">ГЕНЕРАЛЬНИЙ ПЛАН</div>
-                <div class="main__general_plan-untitle">інфраструктура</div>
-                <div class="main__general_plan-plus-list">
-                    <div class="main__general_plan-plus flex">
-                        <div class="main__general_plan-plus-num">1</div>
-                        <div class="main__general_plan-plus-title">Пост охорони</div>
-                    </div>
-                    <div class="main__general_plan-plus flex">
-                        <div class="main__general_plan-plus-num">2</div>
-                        <div class="main__general_plan-plus-title">Гостьовий паркінг</div>
-                    </div>
-                    <div class="main__general_plan-plus flex">
-                        <div class="main__general_plan-plus-num">3</div>
-                        <div class="main__general_plan-plus-title">Паркова зона</div>
-                    </div>
-                </div>
-                <div class="main__general_plan-step-construction-title">ЧЕРГА БУДІВНИЦТВА</div>
-                <div class="main__general_plan-step-construction flex">
-                    <div class="main__general_plan-step-construction-item">
-                        <img src="img/box.png" alt="1">
-                        <div class="main__general_plan-step-construction-item-text">1</div>
-                    </div>
-                    <div class="main__general_plan-step-construction-item">
-                        <img src="img/box2.png" alt="2">
-                        <div class="main__general_plan-step-construction-item-text">2</div>
-                    </div>
-                    <div class="main__general_plan-step-construction-item">
-                        <img src="img/box3.png" alt="3">
-                        <div class="main__general_plan-step-construction-item-text">3</div>
-                    </div>
-                </div>
-            </div>
-            <img src="img/geleral-plan.png" alt="">
-        </div>
-        <div class="main__materials">
-            <img src="img/materials.svg" alt="" class="main__materials-1 main__materials-i">
-            <img src="img/materials.svg" alt="" class="main__materials-2 main__materials-i">
-            <img src="img/materials.svg" alt="" class="main__materials-3 main__materials-i">
-            <img src="img/materials.svg" alt="" class="main__materials-4 main__materials-i">
-            <img src="img/materials.svg" alt="" class="main__materials-5 main__materials-i">
-            <img src="img/materials.svg" alt="" class="main__materials-6 main__materials-i">
-            <img src="img/materials.svg" alt="" class="main__materials-7 main__materials-i">
-            <div class="main__materials-item flex">
-                <div class="main__materials-item-left ">
-                    <div class="main__materials-title">Вікна</div>
-                    <div class="main__materials-item-brand">
-                        <div class="main__materials-item-name">Rehau</div>
-                        <div class="main__materials-item-untext">Бренд</div>
-                    </div>
-                    <div class="main__materials-item-number-cameras">
-                        <div class="main__materials-item-name">6</div>
-                        <div class="main__materials-item-untext">Число камер</div>
-                    </div>
-                </div>
-                <div class="main__materials-item-right">
-                    <div class="main__materials-item-tovshchina-sklopaketa">
-                        <div class="main__materials-item-name">до 44 мм</div>
-                        <div class="main__materials-item-untext">Товщина склопакета</div>
-                    </div>
-                    <div class="main__materials-item-unsecured">
-                        <div class="main__materials-item-name">вище 2 класу</div>
-                        <div class="main__materials-item-untext">Зламобезпека</div>
-                    </div>
-                    <div class="main__materials-item-economy-vitrat-energy">
-                        <div class="main__materials-item-name">до 76%</div>
-                        <div class="main__materials-item-untext">Економія витрат енергії</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__cottages" id="cottage">
-            <div class="content">
-                <div class="main__cottages-title">Котеджі</div>
-                <div class="main__cottages_slider">
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№1</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg2.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№2</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg3.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№3</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg4.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№4</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg5.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№5</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg6.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№6</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg7.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№7</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg8.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№8</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg9.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№10</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item">
-                        <img src="img/cottage-bg10.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№11</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.61</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item-change flex" >
-                        <div class="main__cottages_slider-item-previous previous" onclick="minusSlideCottages()"></div>
-                        <div class="main__cottages_slider-item-next next" onclick="plusSlideCottages()"></div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="main__duplex" id="duplex">
-            <div class="content">
-                <div class="main__duplex-title">Дуплекси</div>
-                <div class="main__duplex_slider">
-                    <div class="main__duplex_slider-item">
-                        <img src="img/duplex.jpg" alt="">
-                        <div class="main__duplex_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__duplex_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№9</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">118.40</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">3 спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__duplex_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__duplex_slider-item">
-                        <img src="img/duplex.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№9/1</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">118.40</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">2 дитячі спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__duplex_slider-item">
-                        <img src="img/duplex2.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№12</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.21</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">2 дитячі спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__duplex_slider-item">
-                        <img src="img/duplex2.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№13</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.33</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">2 дитячі спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__duplex_slider-item">
-                        <img src="img/duplex3.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№14</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.33</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">2 дитячі спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__duplex_slider-item">
-                        <img src="img/duplex3.jpg" alt="">
-                        <div class="main__cottages_slider_item-plan-dow"><a href="#">Архітектурний план</a></div>
-                        <div class="main__cottages_slider_items-top flex">
-                            <div class="main__cottages_slider_item-cottages">
-                                <div class="main__cottages_slider_item-title">№15</div>
-                                <div class="main__cottages_slider_item-untitle">Коттедж</div>
-                            </div>
-                            <div class="main__cottages_slider_item-square">
-                                <div class="main__cottages_slider_item-title">119.66</div>
-                                <div class="main__cottages_slider_item-untitle">Площа будинку, м²</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">2 дитячі спальні</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage2.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Кухня</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage3.png" alt="">
-                                <div class="main__cottages_slider_item-box-text ">Гараж на 2 авто</div>
-                            </div>
-                            <div class="main__cottages_slider_item-box flex">
-                                <img src="img/cottage4.png" alt="">
-                                <div class="main__cottages_slider_item-box-text">Кладова</div>
-                            </div>
-                        </div>
-                        <div class="main__cottages_slider_items-bottom flex">
-                            <div class="main__cottages_slider_items-bottom-title">Матеріали</div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">1</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Газоблок</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">2</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Цегла</div>
-                            </div>
-                            <div class="main__cottages_slider_items-bottom-item flex">
-                                <div class="main__cottages_slider_items-bottom-item-text">3</div>
-                                <div class="main__cottages_slider_items-bottom-item-untext">Керамоблок</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__cottages_slider-item-change flex" >
-                        <div class="main__cottages_slider-item-previous previous" onclick="minusSlideDuplex()"></div>
-                        <div class="main__cottages_slider-item-next next" onclick="plusSlideDuplex()"></div>
-                    </div>
-                    <div class="slider-dots">
-                        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
-                        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__construction_progress">
-            <div class="content">
-                <div class="main__construction_progress-title">Хід будівництва</div>
-                <div class="main__construction_progress-block flex">
-                    <div class="main__construction_progress_year flex">
-                        <div class="main__construction_progress_year-text">Рік: </div>
-                        <select name="select" id="">
-                            <option value="year-2021">2021</option>
-                            <option value="year-2020">2020</option>
-                            <option value="year-2019">2019</option>
-                            <option value="year-2018">2018</option>
-                        </select>
-                    </div>
-                    <div class="main__construction_progress_month flex">
-                        <div class="main__construction_progress_month-text">Місяць: </div>
-                        <select name="select" id="">
-                            <option value="january">Січень</option>
-                            <option value="february">Лютий</option>
-                            <option value="March">Березень</option>
-                            <option value="April">Квітень</option>
-                            <option value="May">Травень</option>
-                            <option value="June">Червень</option>
-                            <option value="July">Липень</option>
-                            <option value="August">Серпень</option>
-                            <option value="September">Вересень</option>
-                            <option value="October">Жовтень</option>
-                            <option value="November">Листопад</option>
-                            <option value="December">Грудень</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="main__construction_progress-list">
-                    <img src="img/construction_progress.jpg" alt="" class="main__construction_progress-item">
-                    <img src="img/construction_progress2.jpg" alt="" class="main__construction_progress-item">
-                </div>
-                <div class="main__cottages_slider-item-change flex" style="margin-top: 50px;margin-left: -20px;">
-                    <div class="previous"></div>
-                    <div class="next" style="margin-left: 1400px;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="main__questions_answers">
-            <div class="content">
-                <div class="main__questions_answers-title">ПИТАННЯ ТА ВІДПОВІДІ</div>
-                <li><span>Де знаходиться котеджне містечко?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-                <li><span>Що є на територіі?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-                <li><span>Що входить в комплектацію?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-                <li><span>Як дістатися містечка?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-                <li><span>Територія під охороною?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-                <li><span>Хто обслуговує територію?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corporis impedit pariatur ipsum ex nobis similique iusto. Cum mollitia saepe quos commodi harum sunt, quia voluptatum modi non velit animi quisquam incidunt culpa. Sint recusandae neque ipsa eos esse voluptatum, ea rerum laboriosam, animi sequi explicabo voluptates sapiente dolores voluptas.</div>
-                    </div>
-                </li>
-                <li><span>Які планування та ділянки в наявності?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-                <li><span>Чи є поруч водойми?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro delectus non? Harum odit unde tempora commodi omnis laboriosam aliquam perspiciatis expedita sapiente, tempore beatae labore maiores nisi dolores, pariatur, fugit porro obcaecati aliquid repellendus quas voluptate facilis amet? Ab mollitia recusandae non pariatur maiores at quibusdam, similique molestiae voluptas!</div>
-                    </div>
-                </li>
-                <li><span>Які матеріали використовуються в будівництві?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corporis impedit pariatur ipsum ex nobis similique iusto. Cum mollitia saepe quos commodi harum sunt, quia voluptatum modi non velit animi quisquam incidunt culpa. Sint recusandae neque ipsa eos esse voluptatum, ea rerum laboriosam, animi sequi explicabo voluptates sapiente dolores voluptas.</div>
-                    </div>
-                </li>
-                <li><span>Чому «Vita Residence» — котеджне містечко максимального комфорту?</span><img src="img/arrow_down.svg" alt="">
-                    <div class="main__questions_answers-hide-block">
-                        <div class="main__questions_answers-hide-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam dolorem, alias quam impedit quia voluptate doloribus reprehenderit, laborum pariatur harum asperiores eum saepe, corrupti repudiandae laboriosam nesciunt! Impedit expedita quam numquam velit dolor perspiciatis tempore, deleniti culpa, soluta explicabo, eveniet eligendi pariatur esse veniam porro dolores cupiditate repellat doloribus eius.</div>
-                    </div>
-                </li>
-            </div>
-        </div>
-        <div class="main__get_consultation">
-            <div class="main__get_consultation-title">Ми з радістю розповімо більше!</div>
-            <form action="" method="post" >
-                <input type="text" name="name" placeholder="Ваше ім'я"><br>
-                <input type="text" name="phone" placeholder="Номер телефону"><br>
-                <input type="submit" value="Отримати консультацію">
-            </form>
-        </div>
+        <!-- // portfolio-cars-wrapper -->
+      </div>
     </main>
-    <footer>
-        <div class="footer__contact" id="contact">
-            <div class="footer__contact-title">контакти</div>
-            <div class="footer__contact-contacts flex">
-                <div class="footer__contact-phone">
-                    <img src="img/footer_contact.png" alt="" style="padding-left: 50px;">
-                    <a href="tel:+380661234567">+38 (066) 123 45 67</a>
-                </div>
-                <div class="footer__contact-facebook">
-                    <img src="img/footer_contact2.png" alt="" style="padding-left: 30px;">
-                    <a href="">Vita Residence</a>
-                </div>
-                <div class="footer__contact-insta">
-                    <img src="img/footer_contact3.png" alt="" style="padding-left: 35px;">
-                    <a href="">@vita.residence</a>
-                </div>
-                <div class="footer__contact-telegram">
-                    <img src="img/footer_contact4.png" alt="" style="padding-left: 40px;">
-                    <a href="">@vita_residence</a>
-                </div>
+    <!-- // Main -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-row">
+          <!-- // Footer-copyright -->
+          <div class="footer-copyright footer-col">
+            <div class="footer-copyright-name">© Андрей Гонов</div>
+            <p>HTML верстка и разработка сайтов</p>
+          </div>
+          <!-- // Footer-copyright -->
+
+          <!-- Footer-icons -->
+          <div class="footer-icons footer-col">
+            <p>Мои профили в социальных сетях:</p>
+            <div class="footer-icons-row">
+              <a href="https://www.weblancer.net/users/Andreyful/">
+                <img src="./img/weblancer.svg" alt="Weblancer" />
+              </a>
+              <a href="https://freelancehunt.com/freelancer/Andreyful.html?r=k20ZZ&utm_source=partner&utm_medium=bonus">
+                <img src="./img/hunt.svg" alt="Freelancehunt" />
+              </a>
+              <a href="https://vk.com/letoqq">
+                <img src="./img/vk.svg" alt="Vk" />
+              </a>
+              <a href="#">
+                <img src="./img/github.svg" alt="Github" />
+              </a>
             </div>
+          </div>
+          <!-- // Footer-icons -->
+
+          <div class="footer-contacts footer-col">
+            <a href="https://vk.me/letoqq" class="footer-button"
+              >Связаться Вконтакте</a
+            >
+            <p>
+              Напишите мне, чтобы заказать или узнать стоимость верстки вашего
+              проекта
+            </p>
+          </div>
         </div>
-        <div class="footer__bottom">
-            <div class="footer__bottom-logo"><img src="img/footer_logo.png" alt=""></div>
-            <div class="footer__bottom-menu">
-                <ul>
-                    <li><a href="#">Концепція</a></li>
-                    <li><a href="#">Генплан</a></li>
-                    <li><a href="#">Будинки</a></li>
-                    <li><a href="#">Дуплекси</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://raw.githubusercontent.com/itchief/ui-components/master/ChiefSlider/chief-slider.min.js"></script>
-    <script src="/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const slider = new ChiefSlider('.main__construction_progress-list', {
-            loop: true,
-            autoplay: true,
-            interval: 7000,
-          });
-        });
-    </script>
-</body>
+    <!-- // Footer -->
+
+    <!-- Библеотеки и плагины -->
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/vide/jquery.vide.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
