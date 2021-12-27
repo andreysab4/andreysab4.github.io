@@ -780,7 +780,7 @@ header {
     color: #3F714C;
 }
 .main__materials {
-    background-image: url("/img/materials.jpg");
+    background-image: url("../img/materials.jpg");
     background-repeat: no-repeat;
     height: 1001px;
     margin-top: 200px;
