@@ -1,0 +1,51 @@
+@media(max-width: 1100px) {
+    .container-main {
+        width: 95%;
+    }
+
+    .card-content {
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 990px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .menu {
+        display: table;
+    }
+}
+
+@media(max-width: 768px) {
+    .container-main {
+        width: 90%;
+    }
+
+    .s1-content {
+        flex-wrap: wrap;
+    }
+
+    .s1-content img {
+        display: none;
+    }
+
+    .content-one {
+        flex-wrap: wrap;
+    }
+
+    .content-one img {
+        display: none;
+    }
+
+    .mobile-img img {
+        display: table !important;
+        width: 100%;
+    }
+}
